@@ -5,8 +5,8 @@ const transporteRegalos = (tipoRegalos, nombreReno) => {
   if (typeof nombreReno !== 'string') throw new Error('debe ser un string')
 
   const pesoRegalo = tipoRegalos.length
-  const pesoReno = nombreReno.length*2
-  return Math.floor(pesoReno/pesoRegalo)
+  const pesoReno = nombreReno.length * 2
+  return Math.floor(pesoReno / pesoRegalo)
 }
 
 describe('transpoteRegalos', () => {
